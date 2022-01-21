@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Large Richard Official Webpage</title>
+</head>
+<body>
+  <ul class="tabs">
+    <li data-tab-target="#home" class="active tab">Home</li>
+    <li data-tab-target="#Films" class="tab">Films</li>
+    <li data-tab-target="#about" class="tab">About</li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" data-tab-content class="active">
+      <h1>RUN</h1>
+      <Img src="images/DARKer.png">
+      <p class="text">This is the home</p>
+    </div>
+    <div id="Films" data-tab-content>
+      <h1></h1>
+      <div class="nav" id="nav">
+        <img src="images/Riccflix.png" alt="" class= "nav__logo"> 
+    </div>
+    <div class="row">
+        <h2>Thicc Ricc Film Colection</h2>
+        <div class="row__posters">
+            <img src="images/download.png" alt="" class="row__poster row__posterLarge"
+            onclick="playvideo('images/Thicc Ricc Movie.mp4')">
+            <img src="images/download2.png" alt="" class="row__poster row__posterLarge"
+            onclick="playvideo('images/Thicc Ricc Movie 2.mp4')">
+            <img src="images/download3.png" alt="" class="row__poster row__posterLarge"
+            onclick="playvideo('images/Thicc Ricc Movie 3.mp4')">
+        </div>
+    </div>
+    <div class="row">
+        <h2>Parker Movie</h2>
+        <div class="row__posters">
+            <img src="images/Parker_Movie.jpg" alt="" class="row__poster row__posterLarge"
+            onclick="playvideo('images/Parker Movie With Voice Lines.mp4')">
+        </div>
+    </div>
+    <div class="row">
+        <h2>123 Team Vs 321 Aquaintances</h2>
+        <div class="row__posters">
+            <img src="images/artboard 1.png" alt="" class="row__poster row__poster"
+            onclick="playvideo('images/The 123 team vs 321 aquaintances.mp4')">
+        </div>
+    </div>
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="images/Thicc Ricc Movie.mp4" type="video/mp4">
+        </video>
+        <img src="images/x.png" class="close-btn"
+        onclick="stopvideo()">
+    </div>
+
+    <script>
+        var videoplayer = document.getElementById("videoplayer")
+        var myvideo = document.getElementById("myvideo")
+
+        function stopvideo(){
+            
+            videoplayer.style.display = "none";
+
+        }
+
+        function playvideo(file){
+            myvideo.src = file;
+            videoplayer.style.display = "block";
+        }
+    </script>
+</div>
+</div>
+    </div>
+    <div id="about" data-tab-content>
+      <h1></h1>
+      <p class="text">- Links to us
+        - https://www.youtube.com/channel/UCI_Zeie05E_Oc_gEEwMHmfA
+        - https://www.instagram.com/racing_richard_memes/
+      </p>
+    </div>
+  </div>
+</body>
+</html>
