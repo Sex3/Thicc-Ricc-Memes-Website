@@ -12,6 +12,7 @@
   <ul class="tabs">
     <li data-tab-target="#home" class="active tab">Home</li>
     <li data-tab-target="#Films" class="tab">Films</li>
+    <li data-tab-target="#Premier" class="tab">Premier's</li>
     <li data-tab-target="#about" class="tab">About</li>
   </ul>
 
@@ -19,7 +20,7 @@
     <div id="home" data-tab-content class="active">
       <h1>RUN</h1>
       <Img src="images/DARKer.png">
-      <p class="text">This is the home</p>
+      <p class="text">Coming Soon</p>
     </div>
     <div id="Films" data-tab-content>
       <h1></h1>
@@ -35,6 +36,9 @@
             onclick="playvideo('images/Thicc Ricc Movie 2.mp4')">
             <img src="images/download3.png" alt="" class="row__poster row__posterLarge"
             onclick="playvideo('images/Thicc Ricc Movie 3.mp4')">
+            <img src="images/download4.png" alt="" class="row__poster row__posterLarge"
+            onclick="playvideo('images/Thicc Ricc Movie 4.mp4')">
+
         </div>
     </div>
     <div class="row">
@@ -74,9 +78,13 @@
             videoplayer.style.display = "block";
         }
     </script>
-</div>
-</div>
+    <div class="tab-content">
+    <div id="Premier" data-tab-content>
+      <h1>Coming Soon...</h1>
     </div>
+  </div>
+</div>
+    <div class="tab-content">
     <div id="about" data-tab-content>
       <h1></h1>
       <p class="text">- Links to us
@@ -85,5 +93,6 @@
       </p>
     </div>
   </div>
+</div>
 </body>
 </html>
